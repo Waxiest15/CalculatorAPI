@@ -1,0 +1,13 @@
+// Creating an Expression object with variables
+Expression expression = Expression.builder()
+    .expression("a+(a/2+b)*c")
+    .variables(Map.of("a", 5.0, "b", 3.0, "c", 2.0))
+    .timestamp(LocalDateTime.now())
+    .build();
+
+// Creating a CalculationLog object
+CalculationLog log = CalculationLog.builder()
+    .result("20.0")
+    .expression(expression)  // Linking the log to the expression
+    .timestamp(LocalDateTime.now())
+    .build();
