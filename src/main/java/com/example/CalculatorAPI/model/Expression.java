@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 import java.util.Map;
 
 @Entity
-@Data
-@Builder
+
+
 public class Expression {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
